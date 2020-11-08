@@ -1,14 +1,13 @@
-class NewsController{
+class NewsController {
+  //get/
+  index(req, res) {
+    res.send('news');
+  }
 
-    //get/
-    index(req, res){
-        res.send('news');
-    }
-
-    //[GET] /search
-    show(req, res){
-        res.send('New Details');
-    }
+  //[GET] /search
+  show(req, res) {
+    res.send('New Details');
+  }
 }
 
-module.exports = new NewsController;
+module.exports = new NewsController();
